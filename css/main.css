@@ -6,8 +6,40 @@ body {
     padding: 0;
     overflow: hidden; /* Ẩn thanh cuộn nếu nội dung quá dài */
 }
+/* Định dạng category-description */
+.category-description {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
+.category-description p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 36px;
+}
 
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('background.jpg'); /* Thay đổi hình nền */
+    background-size: cover;
+}
+.category-buttons button {
+    margin: 20px;
+    background-color: #F4A261;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 /* Định dạng game-container */
 .game-container {
     display: flex;
@@ -37,7 +69,7 @@ body {
 
 .player-hand:hover {
     background-color: rgba(244, 162, 97, 1); /* Thay đổi màu khi di chuột qua */
-    transform: scale(1.1); /* Phóng to khi di chuột qua */
+    transform: scale(1.05); /* Phóng to khi di chuột qua */
 }
 
 /* Định dạng challenge */
@@ -58,7 +90,7 @@ body {
 
 .challenge:hover {
     background-color: rgba(240, 109, 6, 1);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /* Nút chức năng */
@@ -72,11 +104,12 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
 }
 
 button:hover {
     background-color: #F06D06;
-    transform: scale(1.05); /* Phóng to khi di chuột qua */
+    transform: scale(1.1); /* Phóng to khi di chuột qua */
 }
 
 /* Hiệu ứng hiển thị */
